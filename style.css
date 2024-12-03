@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  /* Debut Team Positionnement */
+  .Rltv{
+      position: relative;
+  }
+  .AbsltZindex1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+  .flex {
+      display: flex;
+  }
+  .SpcBtwn{
+      justify-content: space-between;
+  }
+  .SpcArnd{
+      justify-content: space-around;
+  }
+  .AlgnItmCntr{
+      align-items: center;
+  }
+  /* Fin Team positionnement */
