@@ -9,12 +9,36 @@ html {
   p {
     font-size: 1.6rem;
   }
+  span {
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    font-weight: 800;
+  }
+  h3 {
+    color: #ff6f61;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  h4 {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
   a {
     text-decoration: none;
   }
   li {
     list-style-type: none;
   }
+  img {
+    max-width: 250px;
+    border-radius: 42px;
+  }
+
+
   /* Debut Team Positionnement */
   .Rltv{
       position: relative;
@@ -25,7 +49,10 @@ html {
       left: 0;
       z-index: 1;
   }
-  .flex {
+  .Fxd{
+    position: fixed;
+  }
+  .Flex {
       display: flex;
   }
   .SpcBtwn{
@@ -38,3 +65,8 @@ html {
       align-items: center;
   }
   /* Fin Team positionnement */
+
+/* Classes fonctionnelles de style */
+.BoxShdw {
+  box-shadow: 0px 0px 6px black;
+}
