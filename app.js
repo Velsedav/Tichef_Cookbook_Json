@@ -18,35 +18,34 @@ fetch("data.json")
 // Return : ∅
 
 function display(currentRecipe) {
-    // ça marche
-//   console.log(currentRecipe.nom);
-let nom = currentRecipe.nom;
-//   console.log(currentRecipe.img);
-let img = currentRecipe.img;
-//   console.log(currentRecipe.difficulte);
-let difficulte = currentRecipe.difficulte;
-//   console.log(currentRecipe.tempPreparation);
-let tempPreparation = currentRecipe.tempPreparation;
-//   console.log(currentRecipe.tempCuisson);
-let tempCuisson = currentRecipe.tempCuisson;
-//   console.log(currentRecipe.portions);
-let portions = currentRecipe.portions;
+  // ça marche
+  //   console.log(currentRecipe.nom);
+  let nom = currentRecipe.nom;
+  //   console.log(currentRecipe.img);
+  let img = currentRecipe.img;
+  //   console.log(currentRecipe.difficulte);
+  let difficulte = currentRecipe.difficulte;
+  //   console.log(currentRecipe.tempPreparation);
+  let tempPreparation = currentRecipe.tempPreparation;
+  //   console.log(currentRecipe.tempCuisson);
+  let tempCuisson = currentRecipe.tempCuisson;
+  //   console.log(currentRecipe.portions);
+  let portions = currentRecipe.portions;
 
-let listeIngredients = ""
- currentRecipe.ingredients.forEach(aliments => {
-    listeIngredients += `<li> ${aliments.quantite} ${aliments.unite} ${aliments.aliment}</li>`
- });
-        //  console.log(listeIngredients);
+  let listeIngredients = "";
+  currentRecipe.ingredients.forEach((aliments) => {
+    listeIngredients += `<li> ${aliments.quantite} ${aliments.unite} ${aliments.aliment}</li>`;
+  });
+  //  console.log(listeIngredients);
 
-let listeStep =""
- currentRecipe.etapes.forEach(step => {
-    listeStep += `<li>${step.numeroEtape} ${step.descEtape}</li>`    
-});
-        // console.log(listeStep);
+  let listeStep = "";
+  currentRecipe.etapes.forEach((step) => {
+    listeStep += `<li>${step.numeroEtape} ${step.descEtape}</li>`;
+  });
+  // console.log(listeStep);
 
-        let templateRecipe = document.querySelector("#recipeMaker")
-        recipeMaker.innerHTML +=
-        `
+  let templateRecipe = document.querySelector("#recipeMaker");
+  recipeMaker.innerHTML += `
                 <div class="BoxShdw" id="recipeMaker">
                   <!-- Overview de la recette -->
                   <h3>${nom}</h3>
@@ -76,13 +75,5 @@ let listeStep =""
                   <div><img src="${img}" alt="" /></div>
                   </div>
                 </div>
-        `
+        `;
 }
-
-
-
-
-
-
-
-
